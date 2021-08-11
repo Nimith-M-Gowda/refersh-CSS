@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
 import Day1 from "./day1";
+import Day2 from "./day2";
+import Day3 from "./Day3";
+import CH1d from "./CH1d";
+
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Day1 />
+    <CH1d />
   </React.StrictMode>,
   document.getElementById("root")
 );

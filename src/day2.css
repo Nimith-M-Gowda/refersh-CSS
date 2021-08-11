@@ -1,0 +1,45 @@
+.Container {
+  background-color: #c9ff;
+  max-width: 960px;
+  margin: 1%;
+}
+
+.Container:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.service {
+  background-color: #cf99;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+  width: 29%;
+  height: 140px;
+}
+
+.services:after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.service p,
+.service h3 {
+  text-align: center;
+  margin: 10px 10;
+}
+
+.content {
+  background: #bcd;
+  clear: both;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+/* .content:after {
+  display: block;
+  content: "";
+  clear: both;
+} */

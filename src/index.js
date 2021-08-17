@@ -4,12 +4,13 @@ import Day1 from "./day1";
 import Day2 from "./day2";
 import Day3 from "./Day3";
 import CH1d from "./CH1d";
+import Practice from "./flexbox/Practice";
 
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <CH1d />
+    <Practice />
   </React.StrictMode>,
   document.getElementById("root")
 );

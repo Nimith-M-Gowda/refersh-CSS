@@ -10,8 +10,8 @@
 8. Cross Start
 9. Cross End
 10. Cross Size = Cross Start + Cross End
-11. display:flex
-12. display:inline-flex
+11. display : flex
+12. display : inline-flex
 13. flex-direction : row
 14. flex-direction : row-reverse
 15. flex-direction : column
@@ -19,3 +19,16 @@
 17. flex-wrap : nowrap
 18. flex-wrap : wrap
 19. flex-wrap : wrap-reverse
+20. flex-flow (flex-direction + flex-wrap) : row wrap-reverse
+21. justify-content : space-between
+22. align-items : flex-start
+23. align-content : flex-start
+24. order (ordering items) : 0 (-1,-10,2 )
+25. flex-grow : 1
+26. flex-shrink : 2
+27. box-sizing : border-box
+28. flex-basis : 60px
+29. max-width : 70px
+30. min-width : 40px
+31. max-height : 30px
+32. min-height(priority over flex-basis) : 40px

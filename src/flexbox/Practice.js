@@ -6,7 +6,7 @@ function Practice(props) {
     <html>
       <head>
         <meta charset="utf-8" />
-        <title>Flexbox Wrap Samples</title>
+        <title>Flexbox Basis Gotchas</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -17,62 +17,43 @@ function Practice(props) {
           rel="stylesheet"
           type="text/css"
           media="screen"
-          href="css/flex-wrap.css"
+          href="css/flex-basis-gotchas.css"
         />
       </head>
       <body>
-        <div class="container row no-wrap">
+        <div class="container auto-zero-container">
           <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
         </div>
 
-        <div class="container row wrap">
+        <div class="container max-width-container">
           <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
         </div>
 
-        <div class="container row wrap-reverse">
+        <div class="container min-width-container">
           <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
         </div>
 
-        <div class="container row-reverse wrap">
+        <div class="container max-height-container">
           <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
         </div>
 
-        <div class="container column wrap">
+        <div class="container min-height-container">
           <div class="item">1</div>
           <div class="item">2</div>
           <div class="item">3</div>
           <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
-        </div>
-
-        <div class="container column-reverse wrap-reverse">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
-          <div class="item">5</div>
-          <div class="item">6</div>
         </div>
       </body>
     </html>

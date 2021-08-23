@@ -1,5 +1,7 @@
 # Flexbox
 
+> > container
+
 1. Flex Container
 2. Flex Item
 3. Main Axis (horizontal)
@@ -23,6 +25,9 @@
 21. justify-content : space-between
 22. align-items : flex-start
 23. align-content : flex-start
+
+> > item
+
 24. order (ordering items) : 0 (-1,-10,2 )
 25. flex-grow : 1
 26. flex-shrink : 2
@@ -32,3 +37,5 @@
 30. min-width : 40px
 31. max-height : 30px
 32. min-height(priority over flex-basis) : 40px
+33. flex (grow , shrink , flex-basis ) : initial (0 1 auto)
+34. align-self : flex-start

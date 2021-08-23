@@ -1,63 +1,48 @@
 import React from "react";
+import img1 from "./jacob.png";
+import img2 from "./john.jpeg";
+import img3 from "./kim.jpeg";
 import "./Practice.css";
 
 function Practice(props) {
   return (
-    <html>
-      <head>
-        <meta charset="utf-8" />
-        <title>Flexbox Basis Gotchas</title>
-        <link
-          rel="stylesheet"
-          type="text/css"
-          media="screen"
-          href="css/base.css"
-        />
-        <link
-          rel="stylesheet"
-          type="text/css"
-          media="screen"
-          href="css/flex-basis-gotchas.css"
-        />
-      </head>
-      <body>
-        <div class="container auto-zero-container">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+    <div className="container">
+      <img className="img" src={img1} slt="jacob" />
+      <div className="subject">
+        <h3>Kylian Mbappe</h3>
+        <div className="description">
+          <p>this is a content on kylian mbappe</p>
+          <p>from monaco to psg along with neymar playing now with messi </p>
         </div>
-
-        <div class="container max-width-container">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+        <div className="comment-box1">
+          <img src={img2} alt="john" />
+          <div className="cd1">
+            <h5>name1</h5>
+            <p>comment one on kylian mbappe</p>
+          </div>
         </div>
-
-        <div class="container min-width-container">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
+        <div className="comment-box2">
+          <img src={img3} alt="kim" />
+          <div className="cd2">
+            <h5>name1</h5>
+            <p>comment two on kylian mbappe</p>
+          </div>
         </div>
-
-        <div class="container max-height-container">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
-        </div>
-
-        <div class="container min-height-container">
-          <div class="item">1</div>
-          <div class="item">2</div>
-          <div class="item">3</div>
-          <div class="item">4</div>
-        </div>
-      </body>
-    </html>
+      </div>
+    </div>
   );
 }
 
 export default Practice;
+
+{
+  /* <div class="container">
+      <div className="header">header</div>
+      <div className="row">
+        <div className="nav">navigation</div>
+        <div className="main">mainSection</div>
+        <div className="aside">aside</div>
+      </div>
+      <div className="footer">footer</div>
+    </div> */
+}

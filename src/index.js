@@ -5,12 +5,13 @@ import Day2 from "./day2";
 import Day3 from "./Day3";
 import CH1d from "./CH1d";
 import Practice from "./flexbox/Practice";
+import AppRouter from "./approuter";
 
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Practice />
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById("root")
 );

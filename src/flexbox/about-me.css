@@ -1,0 +1,286 @@
+body {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background: rgb(216, 193, 143); */
+  width: 95%;
+  max-width: 960px;
+  max-height: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.highlight {
+  font-weight: bolder;
+}
+
+.link a {
+  color: lightseagreen;
+  text-transform: none;
+  text-decoration: underline;
+}
+.navbar {
+  padding: 2em 0;
+  background: rgb(235, 225, 225);
+  height: 15%;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+h6 {
+  font-size: 0.7rem;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  justify-content: center;
+  line-height: 1%;
+}
+.options {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.footer {
+  width: 80%;
+  background: rgb(42, 70, 131);
+  height: 15%;
+  text-align: center;
+  margin: 0 auto;
+}
+.content {
+  /* background: rgb(238, 238, 192); */
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.main {
+  padding-top: 1em;
+  /* background: rgb(116, 240, 223); */
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  padding-top: 1em;
+  flex-direction: column;
+  /* background: rgb(211, 245, 158); */
+  width: 25%;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
+}
+.sidebar img {
+  width: 100%;
+}
+
+.sidebar-1,
+.sidebar-2 {
+  margin-bottom: 2em;
+  max-width: 80%;
+  padding: 1.5em;
+  border: 2em solid rgb(226, 226, 226);
+}
+
+h1 {
+  font-size: 700;
+  font-weight: bolder;
+  color: rgb(19, 19, 107);
+}
+h4 {
+  display: inline-block;
+  color: rgb(34, 141, 202);
+  font-size: 0.8rem;
+}
+
+h2 {
+  color: darkblue;
+  font-size: 1rem;
+  font-weight: 200;
+}
+li {
+  list-style: none;
+  margin-right: 2em;
+  font-weight: bold;
+  font-family: Lora;
+
+  text-decoration: none;
+}
+li:last-child {
+  margin-right: 0;
+}
+a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.current-page {
+  border-bottom: 0.1rem solid black;
+}
+
+a:hover,
+a:focus {
+  color: blue;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+}
+
+h5 {
+  color: rgb(34, 141, 202);
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding-bottom: 2em;
+}
+
+h3 {
+  color: rgb(48, 139, 182);
+}
+.sidebar h3 {
+  color: rgb(42, 70, 131);
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.footer h3 {
+  padding-top: 2em;
+  color: white;
+}
+.footer h5 {
+  color: white;
+  padding-bottom: 2em;
+}
+.sidebar-profile h5 {
+  padding-bottom: 2em;
+  border-bottom: 0.1rem solid black;
+  /* border-bottom: none; */
+}
+.sidebar-profile h5:first-child {
+  border-bottom: none;
+}
+.sidebar-profile .last-ele {
+  border: none;
+}
+.story-recent {
+  justify-content: flex-start;
+  /* border-bottom: 0.1em solid black; */
+  justify-content: space-around;
+}
+.story-recent img {
+  width: 100%;
+  max-height: 25em;
+  object-fit: cover;
+}
+
+.story-old {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-between;
+}
+.stories {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.story-old .profile-photo {
+  width: 28%;
+  margin-top: 2em;
+}
+.story-old .profile-description {
+  margin-top: 1em;
+  width: 68%;
+}
+.profile-description {
+  font-size: 0.8rem;
+  font-family: Lora;
+}
+.story-old img {
+  width: 100%;
+  height: auto;
+  max-height: 90%;
+}
+.profile-photo p {
+  color: grey;
+}
+@media screen and (max-width: 620px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-between;
+  }
+
+  .options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1em;
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .main {
+    width: 100%;
+    padding-top: 1em;
+  }
+  .sidebar {
+    width: 100%;
+  }
+
+  .story-old {
+    display: flex;
+  }
+  .stories {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .story-recent {
+    border-bottom: none;
+  }
+  .stories .profile-photo,
+  .stories .profile-description {
+    width: 100%;
+  }
+
+  .sidebar img {
+    max-width: 90%;
+  }
+  .sidebar-1,
+  .sidebar-2 {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 259px) {
+  .navbar,
+  .content,
+  .footer {
+    width: 100%;
+  }
+}
